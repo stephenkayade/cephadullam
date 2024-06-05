@@ -2,17 +2,28 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
-  ],  theme: {
+  ], 
+  theme: {
     extend: {
+      backgroundColor: {
+        'brand-blue': '#00427b',
+        'brand-deepblue': '#00429b',
+        'brand-brightblue': '#0068b1',
+        'brand-lightyellow': '#FDEBE2',
+        'brand-lightblue': '#00329b'
 
+      },
       colors: {
-        "cp-blue": "#00427b",
-        "cp-coal": "#313131",
-        "cp-milk": "#F4F7FD",
-        "cp-light": "#FFFCF7",
-        "cp-bright": "#E2E2E2",
-        "cp-yellow": "#FFA800",
-        "cp-muted": "#767676",
+        "brand-blue": "#00427b",
+        "brand-deepblue": "#375f82",
+        "brand-coal": "#313131",
+        "brand-milk": "#F4F7FD",
+        "brand-light": "#FFFCF7",
+        "brand-lightblue": "#078ae0",
+        "brand-bright": "#E2E2E2",
+        "brand-brightblue": "#0068b1",
+        "brand-yellow": "#FFA800",
+        "brand-muted": "#767676",
       }
     },
   },

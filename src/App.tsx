@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import MainLoader from './helpers/MainLoader'
+import DashboardLayout from './components/layouts/Dashboard'
+import UserState from './context/user/userState'
+import CourseState from './context/course/courseState'
 
-function App() {
+const Home = React.lazy(() => import('./pages/Home'))
+const Login = React.lazy(() => import('./pages/auth/Login'))
+const Users = React.lazy(() => import('./pages/dashboard/users/Users'))
+const Courses = React.lazy(() => import('./pages/dashboard/courses/Courses'))
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <CourseState>
+        <UserState>
+          <Suspense fallback={MainLoader()}>
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/admin/login' element={<Login />} />
+              {/* <Route path='/dashboard' element={<DashboardLayout Component={Dashboard} header='Dashboard' />} /> */}
+              <Route path='/dashboard/users' element={<DashboardLayout Component={Users} header='User Dashboard' />} />
+              <Route path='/dashboard/courses' element={<DashboardLayout Component={Courses} header='Course Dashboard' />} />
+            </Routes>
+          </Suspense>
+        </UserState>
+      </CourseState>
+    </Router>
+  )
 }
 
-export default App;
+export default App

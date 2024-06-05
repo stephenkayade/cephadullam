@@ -15,7 +15,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="bg-cp-blue border-gray-200 dark:bg-cp-blue">
+            <nav className="bg-brand-blue border-gray-200 dark:bg-brand-blue">
                 <div className="max-w-screen-xl flex flex-wrap items-center gap-x-52 justify-end mx-auto p-2">
 
                     <a href="" className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -85,7 +85,7 @@ const Navbar = () => {
                 </div>
             </nav>
 
-            <nav className="bg-white w-full border-b-[0.5px] border-cp-blue/30">
+            <nav className="bg-white w-full border-b-[0.5px] border-brand-blue/30">
 
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
 
@@ -95,7 +95,7 @@ const Navbar = () => {
 
                             <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                                 {/* <img src="../../../images/nxturban-black-logo.png" className="h-14" alt="Nxturban Logo" /> */}
-                                <h1 className="text-cp-blue text-xl font-bold capitalize">cephadullam</h1>
+                                <h1 className="text-brand-blue text-xl font-bold capitalize">cephadullam</h1>
                             </a>
 
                         </li>
@@ -120,26 +120,26 @@ const Navbar = () => {
 
                                 {
                                     openMenu &&
-                                    <div className='absolute top-[40px] px-2 py-4 left-[-30px] rounded-xl min-w-[320px] min-h-[150px] bg-cp-blue/5 border-[0.5px] border-cp-blue/30'>
+                                    <div className='absolute top-[40px] px-2 py-4 left-[-30px] rounded-xl min-w-[320px] min-h-[150px] bg-brand-blue/5 border-[0.5px] border-brand-blue/30'>
 
                                         <ul className="grid gap-y-4 gap-x-2 grid-cols-2">
 
-                                            <li className='hover:bg-cp-blue/10 transition-all ease-in-out duration-700 rounded-lg py-2 px-3'>
+                                            <li className='hover:bg-brand-blue/10 transition-all ease-in-out duration-700 rounded-lg py-2 px-3'>
                                                 <Link to=''>Training</Link>
                                             </li>
-                                            <li className='hover:bg-cp-blue/10 transition-all ease-in-out duration-700 rounded-lg py-2 px-3'>
+                                            <li className='hover:bg-brand-blue/10 transition-all ease-in-out duration-700 rounded-lg py-2 px-3'>
                                                 <Link to=''>Remote classes</Link>
                                             </li>
-                                            <li className='hover:bg-cp-blue/10 transition-all ease-in-out duration-700 rounded-lg py-2 px-3'>
+                                            <li className='hover:bg-brand-blue/10 transition-all ease-in-out duration-700 rounded-lg py-2 px-3'>
                                                 <Link to=''>Music theory</Link>
                                             </li>
-                                            <li className='hover:bg-cp-blue/10 transition-all ease-in-out duration-700 rounded-lg py-2 px-3'>
+                                            <li className='hover:bg-brand-blue/10 transition-all ease-in-out duration-700 rounded-lg py-2 px-3'>
                                                 <Link to=''>Teen classes</Link>
                                             </li>
-                                            <li className='hover:bg-cp-blue/10 transition-all ease-in-out duration-700 rounded-lg py-2 px-3'>
+                                            <li className='hover:bg-brand-blue/10 transition-all ease-in-out duration-700 rounded-lg py-2 px-3'>
                                                 <Link to=''>Child classes</Link>
                                             </li>
-                                            <li className='hover:bg-cp-blue/10 transition-all ease-in-out duration-700 rounded-lg py-2 px-3'>
+                                            <li className='hover:bg-brand-blue/10 transition-all ease-in-out duration-700 rounded-lg py-2 px-3'>
                                                 <Link to=''>Adult classes</Link>
                                             </li>
                                         </ul>
@@ -196,13 +196,13 @@ const Navbar = () => {
                         </button>
                     </div>
                     <div className="relative hidden md:block w-96 mx-8">
-                        <div className="absolute inset-y-0 end-0 flex items-center ps-3 pointer-events-none bg-cp-blue px-3 rounded-r-md" >
+                        <div className="absolute inset-y-0 end-0 flex items-center ps-3 pointer-events-none bg-brand-blue px-3 rounded-r-md" >
                             <svg className="w-4 h-4 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
                             </svg>
                             <span className="sr-only">Search icon</span>
                         </div>
-                        <input type="text" id="search-navbar" className="block w-full p-2 pe-10 text-[13px] text-gray-900 border border-cp-blue font-dm rounded-md bg-gray-50 focus:ring-cp-blue outline-none focus:border-cp-blue dark:bg-white dark:border-cp-blue dark:placeholder-gray-400 dark:text-black dark:focus:ring-cp-blue dark:focus:border-cp-blue" placeholder="Search for products, brands and categories" />
+                        <input type="text" id="search-navbar" className="block w-full p-2 pe-10 text-[13px] text-gray-900 border border-brand-blue font-dm rounded-md bg-gray-50 focus:ring-brand-blue outline-none focus:border-brand-blue dark:bg-white dark:border-brand-blue dark:placeholder-gray-400 dark:text-black dark:focus:ring-brand-blue dark:focus:border-brand-blue" placeholder="Search for products, brands and categories" />
                     </div>
 
 
